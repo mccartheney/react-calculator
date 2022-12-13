@@ -1,0 +1,60 @@
+.main{
+    box-shadow: rgba(26, 26, 26, 0.954) 0px 5px 15px;
+    .main__buttons{
+
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px 50px 50px;
+        grid-template-areas: 
+                            "clear divi multi delete"
+                            "a b c minus"
+                            "d e f plus"
+                            "g h i sinal"
+                            "por j poi equal";
+
+        button{
+            cursor : pointer;
+            background-color: #7c2c2f;
+            color: white;
+
+            border: none;
+
+            margin: 0px;
+            width: 50px;
+            height: 50px;
+
+            font-size: large;
+        }
+
+        .main__buttons__func{
+            background-color: #551d1f;
+        }
+    }
+    .main__screen{
+        width: 200px;
+        height: 75px;
+
+        background-color: rgb(66, 33, 54);
+        color: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        div{
+            height: 50%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            p{
+                padding-right: 10px;
+            }
+        }
+
+        .main__screen__operation{
+            font-size: 13px;
+        }
+    }
+}
